@@ -1,0 +1,119 @@
+
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.carte {
+    background-color: white;
+    width: 90%;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+
+p {
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+
+.mon-bouton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+.mon-bouton:hover {
+    background-color: #b92929;
+}
+.boutons-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.photo {
+    width: 100px;           
+    height: 100px;         
+    border-radius: 50%;    
+    object-fit: cover;     
+    border: 3px solid #3498db; 
+    margin-bottom: 15px;    
+}
+
+body.dark-theme {
+    background-color: #1a1a1a; 
+    color: #f4f4f4;            
+}
+
+body.dark-theme .carte {
+    background-color: #2d2d2d; 
+    color: white;
+}
+
+
+.btn-dark {
+    position: absolute; 
+    top: 20px;          
+    right: 20px;      
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    transition: 0.3s;
+    z-index: 1000;    
+}
+
+body.dark-theme .btn-dark {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.liste-projets {
+    text-align: left;    /* Aligne le texte à gauche pour plus de lisibilité */
+    list-style: none;    /* Enlève les puces par défaut */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.liste-projets li {
+    background: rgba(0, 0, 0, 0.05); /* Un fond très léger pour chaque projet */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db; /* Une petite barre bleue sur le côté */
+}
+
+/* En mode sombre, on adapte le fond des projets */
+body.dark-theme .liste-projets li {
+    background: rgba(255, 255, 255, 0.1);
+}
