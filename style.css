@@ -99,21 +99,53 @@ body.dark-theme .btn-dark {
 }
 
 .liste-projets {
-    text-align: left;    /* Aligne le texte à gauche pour plus de lisibilité */
-    list-style: none;    /* Enlève les puces par défaut */
+    text-align: left;    
+    list-style: none;    
     padding: 0;
     margin: 20px 0;
 }
 
 .liste-projets li {
-    background: rgba(0, 0, 0, 0.05); /* Un fond très léger pour chaque projet */
+    background: rgba(0, 0, 0, 0.05); 
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 8px;
-    border-left: 4px solid #3498db; /* Une petite barre bleue sur le côté */
+    border-left: 4px solid #3498db; 
 }
 
-/* En mode sombre, on adapte le fond des projets */
+
 body.dark-theme .liste-projets li {
     background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes apparitionDouce {
+    from {
+        opacity: 0;
+        transform: translateY(30px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);    
+    }
+}
+
+
+.carte {
+    animation: apparitionDouce 0.8s ease-out;
+}
+
+.photo {
+    animation: apparitionDouce 0.8s ease-out;
+}
+
+h1 {
+    animation: apparitionDouce 0.8s ease-out 0.2s backwards; 
+}
+
+p {
+    animation: apparitionDouce 0.8s ease-out 0.4s backwards; 
+}
+
+.boutons-container {
+    animation: apparitionDouce 0.8s ease-out 0.6s backwards; 
 }
